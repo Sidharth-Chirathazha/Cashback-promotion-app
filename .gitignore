@@ -1,0 +1,40 @@
+
+# ---- GLOBAL ----
+*.log
+*.pyc
+*.pyo
+__pycache__/
+.DS_Store
+.env
+.env.*
+venv/
+
+
+# ---- VSCODE ----
+.vscode/
+.idea/
+
+# ---- DJANGO BACKEND ----
+
+cashback_backend/*.pyc
+cashback_backend/cashback_backend/__pycache__/
+cashback_backend/.env
+
+
+# ---- REMIX ADMIN DASHBOARD ----
+remix-admin/node_modules/
+remix-admin/build/
+remix-admin/.next/
+remix-admin/.cache/
+remix-admin/.env
+remix-admin/.env.local
+remix-admin/.turbo/
+remix-admin/dist/
+
+# ---- SHOPIFY EXTENSION ----
+shopify-cashback-app/node_modules/
+shopify-cashback-app/dist/
+shopify-cashback-app/build/
+shopify-cashback-app/.env
+shopify-cashback-app/.env.local
+shopify-cashback-app/.cache/
