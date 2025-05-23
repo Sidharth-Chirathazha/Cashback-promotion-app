@@ -8,9 +8,6 @@ from .models import CashbackSetting, CashbackTransaction
 class CashbackSettingListCreateView(generics.ListCreateAPIView):
     queryset = CashbackSetting.objects.all()
     serializer_class = CashbackSettingSerializer
-
-    # def get_queryset(self):
-    #     return CashbackSetting.objects.filter()
     
     def create(self, request, *args, **kwargs):
         if CashbackSetting.objects.exists():

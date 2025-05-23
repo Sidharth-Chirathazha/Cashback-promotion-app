@@ -52,15 +52,15 @@ export default function Dashboard() {
       <div className="grid md:grid-cols-3 gap-4">
         <div className="border rounded p-4">
           <h2 className="font-semibold">Total Issued</h2>
-          <p className="text-green-600">${totalIssued.toFixed(2)}</p>
+          <p className="text-green-600">₹{totalIssued.toFixed(2)}</p>
         </div>
         <div className="border rounded p-4">
           <h2 className="font-semibold">Pending</h2>
-          <p className="text-yellow-600">${pending.toFixed(2)}</p>
+          <p className="text-yellow-600">₹{pending.toFixed(2)}</p>
         </div>
         <div className="border rounded p-4">
           <h2 className="font-semibold">Redeemed</h2>
-          <p className="text-blue-600">${redeemed.toFixed(2)}</p>
+          <p className="text-blue-600">₹{redeemed.toFixed(2)}</p>
         </div>
       </div>
 
@@ -96,8 +96,8 @@ export default function Dashboard() {
             {transactions.map((tx) => (
               <tr key={tx.order_id} className="border-t">
                 <td className="p-2 border">{tx.order_id}</td>
-                <td className="p-2 border">${parseFloat(tx.order_amount).toFixed(2)}</td>
-                <td className="p-2 border">${parseFloat(tx.cashback_amount).toFixed(2)}</td>
+                <td className="p-2 border">₹{parseFloat(tx.order_amount).toFixed(2)}</td>
+                <td className="p-2 border">₹{parseFloat(tx.cashback_amount).toFixed(2)}</td>
                 <td className="p-2 border capitalize">{tx.status}</td>
                 <td className="p-2 border">{new Date(tx.created_at).toLocaleDateString()}</td>
               </tr>

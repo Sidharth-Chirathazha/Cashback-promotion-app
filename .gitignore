@@ -32,9 +32,9 @@ remix-admin/.turbo/
 remix-admin/dist/
 
 # ---- SHOPIFY EXTENSION ----
-shopify-cashback-app/node_modules/
-shopify-cashback-app/dist/
-shopify-cashback-app/build/
-shopify-cashback-app/.env
-shopify-cashback-app/.env.local
-shopify-cashback-app/.cache/
+sample-cashback/node_modules/
+sample-cashback/dist/
+sample-cashback/build/
+sample-cashback/.env
+sample-cashback/.env.local
+sample-cashback/.cache/
